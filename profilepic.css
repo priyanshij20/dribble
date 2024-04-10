@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e8c5;
+  }
+
+  .option-container {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .option-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .option-container input[type="checkbox"]:checked + img { /* Style on checkbox selection */
+    border: 2px solid #007bff; /* Add a blue border on selection */
+  }  
+  
+  .container {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header a {
+    text-decoration: none;
+  }
+  
+  .header .dribbble-icon {
+    width: 10px;
+    height: 5px;
+    fill: #EA4C89;
+    align-items: left;
+  }
+
+  .signup-button {
+    display: inline-block;
+    background-color: #fe3c9d; /* Pink color */
+    color: #fff; /* White text color */
+    padding: 10px 10px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .upload-avatar {
+    margin-bottom: 20px;
+  }
+  
+  .add-avatar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture-container {
+    width: 150px; /* Set width and height for circular frame */
+    height: 150px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflowing content */
+    margin-right: 20px; /* Adjust spacing between image container and file input */
+  }
+  
+  .profile-picture-container img {
+    width: 100%; /* Make the image fill the circular frame */
+    height: auto;
+    border: none; /* Remove any border */
+  }
+  
+  input[type="file"] {
+    display: none; /* Hide the file input by default */
+  }
+  
+  .add-avatar-container input[type="file"] {
+    display: block; /* Make the file input visible */
+  }    

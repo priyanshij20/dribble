@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e8c5;
+  }
+  
+  .option-container {
+    display: inline-block; /* Make them inline elements */
+    margin-right: 10px; /* Add spacing between options */
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius:10px;
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .logo {
+    width: 100px; /* Set width for the logo */
+  }
+  
+  .previous-page-button {
+    padding: 10px 15px; /* Adjust padding as needed */
+    background-color: #dbccd3e8; /* Pink color */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .previous-page-button:hover {
+    background-color: #d6c5cd; /* Darker pink color on hover */
+  }
+
+  .option-container {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between options */
+  text-align: center; /* Align content center */
+}
+
+.option-container input[type="radio"] {
+  display: none; /* Hide the radio input by default */
+}
+
+.option-container label {
+  cursor: pointer;
+  display: block;
+  border: 2px solid #ccc; /* Initial border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Adjust padding as needed */
+  transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+.option-container img {
+  width: 250px; /* Set width for option images */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center images and adjust spacing between image and text */
+}
+
+.option-container input[type="radio"]:checked + label {
+  border-color: #fa57a8; /* Pink border color when checked */
+}
+
+.option-container input[type="radio"]:checked + label:before {
+  content: "\u2713"; /* Unicode checkmark character */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Circular checkbox */
+  background-color: #fa57a8; /* Pink color */
+  color: rgb(88, 83, 83);
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.finish-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #f62f93; /* Pink color */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.finish-button:hover {
+  background-color: #f55d9f; /* Darker pink color on hover */
+}

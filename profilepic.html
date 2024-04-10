@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome! Let's create your profile</title>
+  <link rel="stylesheet" href="profilepic.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="#">
+        <svg class="dribbble-icon" viewBox="0 0 200 66.67">
+          </svg>
+      </a>
+      <a href="#">
+        <img src="logopink.jpg" alt="Dribbble logo">
+      </a>
+    </header>
+    <main class="main">
+      <h1>Welcome! Let's create your profile</h1>
+      <p>Let others get to know you better! You can do these later</p>
+      <form action="/submit-profile" method="post" enctype="multipart/form-data">
+        <div class="upload-avatar">
+          <b><label for="avatar">Add an avatar</label></b> <br>
+          <div class="add-avatar-container">
+            <div class="profile-picture-container">
+              <img id="avatar-preview" src="placeholder.jpg" alt="Preview Image"> <!-- Placeholder image -->
+            </div>
+            <input type="file" id="avatar" name="avatar" accept="image/*" onchange="previewImage(this)">
+          </div>
+          <p>Or choose one of our defaults</p>
+        </div>
+        <div class="location-input">
+          <label for="location"> <h4>Add your location</h4> </label>
+          <input type="text" id="location" name="location" placeholder="Enter a location">
+        </div> <br>
+        <a href="select.html" class="signup-button">Next</a>
+        <br> <br>  Or press RETURN
+      </form>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 Dribbble. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="profilepic.js"></script>
+</body>
+</html>

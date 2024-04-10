@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What brings you to Dribbble?</title>
+  <link rel="stylesheet" href="select.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <!-- Your website's logo -->
+      <img src="logopink.jpg" alt="Your Website Logo" class="logo">
+      <!-- Button to navigate to previous page -->
+      <a href="profilepic.html" class="previous-page-button"><</a>
+    </header>
+    <main class="main">
+      <h1>What brings you to Dribbble?</h1>
+      <p>Select the options that best describe you. Don't worry, you can explore other options later.</p>
+      <form action="/submit-options" method="post">
+        <div class="option-container">
+          <img src="option1.jpg" alt="Design Inspiration icon">
+          <label for="design-inspiration">
+            <input type="checkbox" id="design-inspiration" name="options[]" value="design-inspiration">
+            I'm looking for design inspiration
+          </label>
+        </div>
+        <div class="option-container">
+          <img src="option2.jpg" alt="Designer icon">
+          <label for="designer">
+            <input type="checkbox" id="designer" name="options[]" value="designer">
+            I'm a designer looking to share my work
+          </label>
+        </div>
+        <div class="option-container">
+          <img src="option3.jpg" alt="Hire Designer icon">
+          <label for="hire-designer">
+            <input type="checkbox" id="hire-designer" name="options[]" value="hire-designer">
+            I'm looking to hire a designer
+          </label>
+        </div>
+        <div class="anything-else">
+          <p><b>Anything else? You can select multiple!</b></p>
+        </div>
+        <a href="verify.html" class="finish-button">Finish</a>
+        <p class="or">or</p>
+        <span class="return-link">Press RETURN</span>
+      </form>
+    </main>
+    <footer class="footer">
+    </footer>
+  </div>
+  <script src="select.js"></script>
+</body>
+</html>

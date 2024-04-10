@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up to Dribbble</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="login_bg.jpg" alt="Dribbble background image">
+    </div>
+    <div class="form-container">
+      <header class="header">
+        <span class="already-member">Already a member? <a href="#">Sign In</a></span>
+      </header>
+      <main class="main">
+        <h1>Sign up to Dribbble</h1>
+        <form action="/submit-signup" method="post">
+          <div class="input-group">
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Enter 6+ characters">
+            </div>
+          </div> 
+          <label>
+          <input type="checkbox" id="agree_terms" required> Creating an account means you're okay with our <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and our default Notification Settings.</p>
+        </label>
+        <a href="profilepic.html" class="signup-button">Create Account</a>
+        </form>
+      </main>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const agreeTermsCheckbox = document.getElementById("agree_terms");
+  const signupButton = document.getElementById("signup-button");
+
+  agreeTermsCheckbox.addEventListener("change", function() {
+    console.log("Checkbox state changed");
+    if (agreeTermsCheckbox.checked) {
+      signupButton.removeAttribute("disabled");
+    } else {
+      signupButton.setAttribute("disabled", "disabled");
+    }
+  });
+});
+  </script>
+</body>
+</html>
